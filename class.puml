@@ -1,0 +1,15 @@
+@startuml ChainOfResponsability
+
+left to right direction
+
+abstract class Funcionario{
+    - superior:Funcionario
+    + aprovarDesconto(valor:double):String
+}
+Funcionario --> "0..1" Funcionario
+class FuncionarioEstagiario extends Funcionario
+class FuncionarioVendedor extends Funcionario
+class FuncionarioSupervisor extends Funcionario
+class FuncionarioGerente extends Funcionario
+
+@enduml

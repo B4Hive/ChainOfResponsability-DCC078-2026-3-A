@@ -1,0 +1,9 @@
+@startuml
+
+[*] --> Estagiario
+Estagiario --> Vendedor
+Vendedor --> Supervisor
+Supervisor --> Gerente
+Gerente --> [*]
+
+@enduml
